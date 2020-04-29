@@ -1,0 +1,27 @@
+{
+  "name": "comp426-final",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000A\u00004\u00002\u00006\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "esm": "^3.2.25",
+    "firebase": "^7.5.2",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.4.1",
+    "keypress": "^0.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ijdershem/A426.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ijdershem/A426/issues"
+  },
+  "homepage": "https://github.com/ijdershem/A426#readme"
+}

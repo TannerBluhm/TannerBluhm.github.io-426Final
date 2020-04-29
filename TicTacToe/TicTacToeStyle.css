@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c5b65e;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 10%;
+    width: 97vh;
+    margin-top: 1vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2vh;
+    box-shadow: 0 .8vh #a5a5a5;
+}
+  
+div.back {
+    background-color: transparent;
+    height: 8vh;
+    width: 8vh;
+}
+  
+div.headerFill {
+    height: 8vh;
+    width: 24.6vh;
+    background-color: #e7e7e7;
+}
+  
+div.title {
+    width: 32.6vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+  
+}
+  
+div.score {
+    width: 32.6vh;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #e7e7e7;
+    border-radius: 0 2vh 2vh 0;
+    justify-content: right;
+    align-items: center;
+    padding-right: 2vh;
+}
+
+div.score h2 {
+    margin-right: 1vh;
+    font-size: 3vh;
+}
+
+div.overlay{
+    display: none;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25vh;
+    width: 45.2vh;
+    height: 35vh;
+    border-radius: 6vh;
+    background: rgb(0, 0, 0, .5);
+    opacity: 1;
+    z-index: 1;
+  }
+
+div.description {
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    width: 50vh;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #a79a52;
+    margin: 3vh 2vh;
+    border-radius: 3vh;
+}
+
+div.board {
+    width: 60vh;
+    height: 60vh;
+    border-style: solid;
+    border-color: #424242;
+    border-radius: 1vh;
+    border-width: 0;
+    padding: 3vh;
+    margin: 0px;
+    background-color: rgb(224, 224, 224);
+    background-position: center; 
+    box-shadow: 0 1vh #adadad;
+}
+
+div.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 33%;
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+}
+
+div.tile {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+h2.title {
+    color: #4b4b4b;
+    margin: 5%;
+    font-size: 3.5vh;
+}
+
+h4.description {
+    color: #d8d8d8;
+    align-self: center;
+    font-size: 1.5vh;
+}
+
+.won {
+    color: #d8d8d8;
+    align-self: center;
+    font-size: 1.5vh;
+}
+
+#score {
+    color: #4b4b4b;
+    text-align: right;
+    margin: 4vh;
+    font-size: 3.5vh;
+}
+
+button {
+    display: inline-block;
+    padding: 1.5vh 2vh;
+    margin: 3vh;
+    font-size: 2vh;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    outline: none;
+    color: #4b4b4b;
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 .8vh #a5a5a5;
+    transition: box-shadow .1s, transform .1s;
+}
+  
+button:hover {background-color: #c9c9c9}
+  
+button:active {
+    background-color: #c9c9c9;
+    box-shadow: 0 .4vh #a5a5a5;
+    transform: translateY(.4vh);
+}
+
+a.back {
+    border-radius: 2vh 0 0 2vh;
+    text-decoration: none;
+    color: #4b4b4b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 8vh;
+    background-color: #e7e7e7;
+    font-size: 3vh;
+    transition: transform .1s;
+}
+  
+a.back:hover {
+    background-color: #c9c9c9;
+}
+
+a.back:active {
+    transform: translateY(.4vh);
+}
+
+.piece {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0vh 0vh 0vh 0vh;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    font-size: 10vh;
+    transition: transform .5s, color .5s;
+}
+
+.white h1 {
+    color: rgb(250, 60, 60);
+    align-self: center;
+}
+
+.black h1 {
+    color: rgb(53, 175, 53);
+    align-self: center;
+}
+
+.winningPiece {
+    color: rgb(226, 206, 95);
+    transform: rotate(360deg);
+}
+
+ #AI {
+     border-style: solid;
+     border-radius: 1vh;
+     color: grey;
+     font-size: 3.5vh;
+ } 
